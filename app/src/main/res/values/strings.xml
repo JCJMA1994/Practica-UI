@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Google I/O 2021</string>
+    <string name="descripcion">Mira el resumen de I/O 2021 y consulta el hashtag #io21 en las redes sociales</string>
+    <string name="btoComenzar">Comenzar</string>
+    <string name="title_activity_info">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
