@@ -1,16 +1,14 @@
 package com.example.practica_demo.ui.location
 
-import android.location.Location
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.practica_demo.databinding.FragmentLocationBinding
-import com.example.practica_demo.ui.home.HomeViewModel
+
 
 class LocationFragment : Fragment() {
     private lateinit var locationViewModel: LocationViewModel
@@ -24,7 +22,7 @@ class LocationFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         locationViewModel =
             ViewModelProvider(this).get(LocationViewModel::class.java)
 
@@ -32,7 +30,7 @@ class LocationFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textLocation
-        locationViewModel.text.observe(viewLifecycleOwner, Observer {
+        locationViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root

@@ -8,16 +8,99 @@
 
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="14dp"
+        android:layout_height="6dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/title_home"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="562dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_img_yuan"
+                android:layout_width="247dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_yuan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circle_img_zoey"
+                app:layout_constraintVertical_bias="0.23" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_img_baker"
+                android:layout_width="244dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_baker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circle_img_andrew"
+                app:layout_constraintVertical_bias="0.045" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_img_zoey"
+                android:layout_width="248dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_zoey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circle_img_baker"
+                app:layout_constraintVertical_bias="0.09" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_img_ben"
+                android:layout_width="247dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_ben"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circle_img_yuan"
+                app:layout_constraintVertical_bias="0.23" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_img_andrew"
+                android:layout_width="242dp"
+                android:layout_height="128dp"
+                android:contentDescription="@string/img_andrew"
+                android:src="@drawable/ic_andrew"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.093" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
